@@ -124,7 +124,10 @@ public class Server {
                     }
                 }
             }
-        } catch (Exception e) {
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        catch (Exception e) {
             e.printStackTrace();
         }
     }
